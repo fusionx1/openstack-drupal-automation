@@ -20,16 +20,17 @@ The image snapshot must have a running lamp and drush
 
 Below are the parameters that needs to be set:
 
-Flavor=2
-ImageID=f90ffa8a-6abb-453e-a342-45faf34fb231
-ServerInstanceName=myserver
-SecurityGroup=default
-PubKeyName=mypubkey
+1. Flavor=2
+2. ImageID=f90ffa8a-6abb-453e-a342-45faf34fb231
+3. ServerInstanceName=myserver
+4. SecurityGroup=default
+5. PubKeyName=mypubkey
 
 
 Future Features
 
 1. Be able to assign a public ip to the provisined server automatically
-2. Will add documentation
+2. Will test haproxy for load balancer
+3. Will add documentation
 
 
