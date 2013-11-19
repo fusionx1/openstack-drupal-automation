@@ -16,11 +16,11 @@ SecurityGroup=default
 PubKeyName=mypubkey
 
 #generate ssh key and add the public key to the openstack access credentials
-#specify Security Group
+#specify Security Group for your server
 
 ssh-keygen -t rsa 
 nova keypair-add --pub_key ~/.ssh/id_rsa.pub $PubKeyName
 nova keypair-list
 
-Spin up a server based on the above parameters
+#spin up a server based on the above parameters
 nova boot --userdata drupal-automation.sh --flavor $Flavor --image $ImageID --key_name $PubKeyName --security_group $SecurityGroup $ServerInstanceName 
